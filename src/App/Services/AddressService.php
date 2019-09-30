@@ -26,9 +26,9 @@ class AddressService extends BaseService
     /**
      * Save new address
      * @param array $address
-     * @return array
+     * @return string
      */
-    public function save(array $address):array
+    public function save(array $address):string
     {
         $this->db->insert("zintec", $address);
         return $this->db->lastInsertId();
