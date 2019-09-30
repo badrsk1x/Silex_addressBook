@@ -63,7 +63,7 @@ class AddressController
      */
     public function delete($id)
     {
-        return new JsonResponse(array("message" => $this->addressService->delete($id)." deleted"));
+        return new JsonResponse(array("message" => "address ".$id." deleted"));
     }
 
     /**
